@@ -20,7 +20,6 @@ public class subsetSum {
         return r1 + r2;
     }
 
-    public static
 
     public static void main(String[] args)
     {
