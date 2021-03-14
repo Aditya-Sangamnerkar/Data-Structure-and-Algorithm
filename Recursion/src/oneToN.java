@@ -8,10 +8,18 @@ public class oneToN {
         System.out.println(k);
         print1ToN(n-1,k+1);
     }
+    public static void print1ToN(int n)
+    {
+        if( n == 0)
+            return;
+
+        print1ToN(n - 1);
+        System.out.print(n+" ");
+    }
 
     public static void main(String[] args)
     {
-        oneToN.print1ToN(5,1);
+        oneToN.print1ToN(64);
     }
 
 }
