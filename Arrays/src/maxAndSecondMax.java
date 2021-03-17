@@ -7,19 +7,19 @@ public class maxAndSecondMax {
     public static ArrayList<Integer> largestAndSecondLargest(int n, int arr[])
     {
         ArrayList<Integer> result = new ArrayList<Integer>();
-        int max = -1;
-        for(int i =0;i<n;i++)
+        int max = arr[0];
+        int secondMax = -1;
+        for(int i =1;i<n;i++)
         {
             if(arr[i] > max)
                 max = arr[i];
-        }
-        int secondMax = -1;
-        for(int i=0;i<n;i++)
-        {
-            if(arr[i] < max && arr[i] > secondMax)
-                secondMax = arr[i];
+
+            if(arr[i-1] < max && arr[i-1] >=  secondMax)
+                secondMax = arr[i-1];
 
         }
+
+
         result.add(max);
         result.add(secondMax);
         return result;
@@ -27,7 +27,7 @@ public class maxAndSecondMax {
     }
     public static void main(String[] args)
     {
-        int arr[] = {2,2,2};
+        int arr[] = {2,2,3,1};
         int n = arr.length;
         ArrayList<Integer> result = new ArrayList<Integer>(2);
         result = largestAndSecondLargest(n,arr);
