@@ -1,3 +1,6 @@
+/*The task is to complete the function maximumAdjacent(),
+which takes sizeOfArray (n) and array(arr) as parameters and
+prints the maximum of all adjacent pairs (space separated).*/
 public class strongestNeighbour {
 
     public static void maximumAdjacent(int sizeOfArray, int arr[]){
