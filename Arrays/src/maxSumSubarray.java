@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+/* maximum sum subarray */
 
 public class maxSumSubarray{
 
@@ -23,6 +24,9 @@ public class maxSumSubarray{
     {
         int arr[] = {-3,8,-2,4,-5,6};
         int n = arr.length;
-        System.out.println(maxSum(arr,n));
+        System.out.print("Array :");
+        for(int i=0;i<n;i++)
+            System.out.print(arr[i]+" ");
+        System.out.println("\nMaximum sum : "+maxSum(arr,n));
     }
 }
