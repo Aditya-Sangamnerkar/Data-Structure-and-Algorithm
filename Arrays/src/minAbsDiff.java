@@ -1,3 +1,6 @@
+/*Given an array Arr of n integers
+arranged in a circular fashion. Your task is to
+find the minimum absolute difference between adjacent elements.*/
 public class minAbsDiff {
 
         public static int minDiff(int arr[], int n)
